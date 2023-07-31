@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void)
+int main_f(void)
 {
     // 정수형 변수
     // int age = 12;
