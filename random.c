@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int main(void)
+int main_random(void)
 {
     // srand(time(NULL)); //난수 초기화
     // int num = rand() % 3;     // 0 ~ 2 중에 랜덤으로 뽑는다.
@@ -37,24 +37,22 @@ int main(void)
     //     printf("몰라요\n");
     // }
 
-    srand(time(NULL));
-    int i = rand() % 3; // 0 ~ 2 중 랜덤
-    switch (i)
-    {
-    case 0:
-        printf("가위\n");
-        break;
-    case 1:
-        printf("바위\n");
-        break;
-    case 2:
-        printf("보\n");
-        break;
-    default:
-        printf("몰라요\n");
-        break;
-    }
-
-    
+    // srand(time(NULL));
+    // int i = rand() % 3; // 0 ~ 2 중 랜덤
+    // switch (i)
+    // {
+    // case 0:
+    //     printf("가위\n");
+    //     break;
+    // case 1:
+    //     printf("바위\n");
+    //     break;
+    // case 2:
+    //     printf("보\n");
+    //     break;
+    // default:
+    //     printf("몰라요\n");
+    //     break;
+    // }
     return 0;
 }
