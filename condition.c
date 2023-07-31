@@ -73,5 +73,8 @@ int main_condition(void)
     // {
     //     printf("값이 서로 다르네요.\n");
     // }
+
+    
+
     return 0;
 }
