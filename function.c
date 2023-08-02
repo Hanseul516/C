@@ -8,6 +8,12 @@ int function_with_return();     // 정수형을 반환하겠다.
 void function_with_params(int num1, int num2, int num3);
 int apple(int apple1, int apple2);
 
+//계산기
+int add(int num1, int num2);
+int sub(int num1, int num2);
+int mul(int num1, int num2);
+int div(int num1, int num2);
+
 int main(void)
 {
     // function
@@ -43,18 +49,34 @@ int main(void)
     // 파라미터(매개변수)가 있는 함수
     // function_with_params(1, 2, 3);
 
-    //파라미터(매개변수)가 있고, 반환값도 있는 함수
-    //int ret = apple(5,2); // 5개의 사과중에서 2개를 먹었어요.
-    // printf("5개의 사과중에서 2개를 먹어서 %d개가 남았어요.\n", ret);
-    printf("%d개의 사과중에서 %d개를 먹어서 %d개가 남았어요.\n", 10, 4, apple(10,4));
+    // 파라미터(매개변수)가 있고, 반환값도 있는 함수
+    // int ret = apple(5,2); // 5개의 사과중에서 2개를 먹었어요.
+    //  printf("5개의 사과중에서 2개를 먹어서 %d개가 남았어요.\n", ret);
+    //  printf("%d개의 사과중에서 %d개를 먹어서 %d개가 남았어요.\n", 10, 4, apple(10,4));
+
+    // 계산기 함수
+    int num = 2;
+    num = add(num, 3);
+    p(num);
+
+    num = sub(num, 1);
+    p(num);
+
+    num = mul(num, 3);
+    p(num);
+
+    num = div(num, 6);
+    p(num);
+
 
     return 0;
+
 }
 
 // 정의
 void p(int num)
 {
-    printf("num은 %d입니다\n", num);
+    printf("num은 %d입니다.\n", num);
 }
 
 void function_without_return()
@@ -76,4 +98,26 @@ void function_with_params(int num1, int num2, int num3)
 int apple(int apple1, int apple2)
 {
     return apple1 - apple2;
+}
+
+
+//계산기
+int add(int num1, int num2)
+{
+    return num1 + num2;
+}
+
+int sub(int num1, int num2)
+{
+    return num1 - num2;
+}
+
+int mul(int num1, int num2)
+{
+    return num1 * num2;
+}
+
+int div(int num1, int num2)
+{
+    return num1 / num2;
 }
