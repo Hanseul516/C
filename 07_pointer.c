@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void)
+int main_pointer(void)
 {
     // 포인터
 
@@ -54,36 +54,38 @@ int main(void)
     // printf("미션맨의 주소 : %d\n", &미션맨);
     // printf("스파이의 주소 : %d\n", &스파이);
 
-    // 배열과 포인터
-    int arr[3] = {5, 10, 15};
-    int *ptr = arr; // 포인터 변수가 arr의 값을 바꾼걸로 볼 수 있음
-    for (int i = 0; i < 3; i++)
-    {
-        printf("배열 arr[%d]의 값 : %d\n", i, arr[i]);
-    }
-    for (int i = 0; i < 3; i++)
-    {
-        printf("포인터 ptr[%d]의 값 : %d\n", i, ptr[i]);
-    }
+    // // 배열과 포인터
+    // int arr[3] = {5, 10, 15};
+    // int *ptr = arr; // 포인터 변수가 arr의 값을 바꾼걸로 볼 수 있음
+    // for (int i = 0; i < 3; i++)
+    // {
+    //     printf("배열 arr[%d]의 값 : %d\n", i, arr[i]);
+    // }
+    // for (int i = 0; i < 3; i++)
+    // {
+    //     printf("포인터 ptr[%d]의 값 : %d\n", i, ptr[i]);
+    // }
 
-    ptr[0] = 100;
-    ptr[1] = 200;
-    ptr[2] = 300;
-    for (int i = 0; i < 3; i++)
-    {
-        printf("배열 ptr[%d]의 값 : %d\n", i, *(arr + i));
-    }
-    for (int i = 0; i < 3; i++)
-    {
-        printf("포인터 ptr[%d]의 값 : %d\n", i, *(ptr + i));
-    }
-    //*(arr+i)==arr[i] 똑같은 표현
-    // arr == arr배열의 첫번째 값의 주소와 동일 == &arr[0]
-    printf("arr 자체의 값 : %d\n", arr);
-    printf("arr[0]의 주소 값 : %d\n", &arr[0]);
+    // ptr[0] = 100;
+    // ptr[1] = 200;
+    // ptr[2] = 300;
+    // for (int i = 0; i < 3; i++)
+    // {
+    //     printf("배열 ptr[%d]의 값 : %d\n", i, *(arr + i));
+    // }
+    // for (int i = 0; i < 3; i++)
+    // {
+    //     printf("포인터 ptr[%d]의 값 : %d\n", i, *(ptr + i));
+    // }
+    // //*(arr+i) == arr[i] 똑같은 표현
+    // // arr == arr배열의 첫번째 값의 주소와 동일 == &arr[0]
+    // printf("arr 자체의 값 : %d\n", arr);
+    // printf("arr[0]의 주소 값 : %d\n", &arr[0]);
 
-    printf("arr 자체의 값이 가지는 주소의 실제 값 : %d\n", *arr);
-    printf("arr[0]의 실제 값 : %d\n", &arr[0]);
+    // printf("arr 자체의 값이 가지는 주소의 실제 값 : %d\n", *arr);
+    // printf("arr[0]의 실제 값 : %d\n", &arr[0]);
+    // //&arr[0]: 배열 arr의 첫 번째 원소 arr[0]의 주소를 나타냄. arr 자체와 값이 같음.
+    // //*arr: 배열 arr의 첫 번째 원소 arr[0]의 값을 나타냄. arr[0]의 값과 같음.
 
-    return 0;
+    // //*& 는 아무것도 없는 것과 같다. $은주소고 *은 주소값이기떄문에. 서로 상쇄된다.
 }
