@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void)
+int main_MA(void)
 {
     // 다차원 배열
     // int arr[5]; // 5개 공간
@@ -67,6 +67,6 @@ int main(void)
             }
         }
     }
-    
+
     return 0;
 }
