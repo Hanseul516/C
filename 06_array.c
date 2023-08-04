@@ -79,6 +79,4 @@ int main_array(void)
     // {
     //     printf("%c\n", c_array[i]); //남는 공간 공백으로 출력
     // }
-
-
 }

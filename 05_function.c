@@ -8,7 +8,7 @@ int function_with_return();     // 정수형을 반환하겠다.
 void function_with_params(int num1, int num2, int num3);
 int apple(int apple1, int apple2);
 
-//계산기
+// 계산기
 int add(int num1, int num2);
 int sub(int num1, int num2);
 int mul(int num1, int num2);
@@ -68,9 +68,7 @@ int main_function(void)
     num = div(num, 6);
     p(num);
 
-
     return 0;
-
 }
 
 // 정의
@@ -100,8 +98,7 @@ int apple(int apple1, int apple2)
     return apple1 - apple2;
 }
 
-
-//계산기
+// 계산기
 int add(int num1, int num2)
 {
     return num1 + num2;
