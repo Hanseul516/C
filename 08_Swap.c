@@ -28,7 +28,6 @@ int main_swap(void)
         printf("%d\n", arr2[i]);
     }
 
-
     return 0;
 }
 
